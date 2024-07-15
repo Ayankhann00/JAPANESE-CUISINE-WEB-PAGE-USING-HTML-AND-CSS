@@ -1,5 +1,7 @@
 # JAPANESE-CUISINE-WEB-PAGE-USING-HTML-AND-CSS
 Welcome to the Japanese Cuisine web page project! This project is a simple, responsive web page showcasing popular Japanese dishes with an emphasis on beautiful design and informative content.
+![Screenshot of the Japanese Cuisine Web Page](![Uploading Screenshot 2024-07-15 at 1.17.49 PM.png…])
+
 
 Table of Contents
 
