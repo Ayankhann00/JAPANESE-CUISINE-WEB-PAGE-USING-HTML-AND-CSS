@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="A brief description of this website">
+    <meta http-equiv="refresh" content="30">
+    <title>Japanese Cuisine</title>
+    <link rel="stylesheet" href="codee.CSS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="container">
+        <ul class="navbar">
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">About Us</a></li>
+            <li class="nav-item"><a href="#">Menu</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+        </ul>
+        <h2>Japanese Cuisine</h2>
+        <button class="btn btn-login"><a href="#"><strong>Login</strong></a></button>
+        <button class="btn btn-register"><a href="#"><strong>Register</strong></a></button>
+    </nav>
+
+    <section class="dishes">
+        <div class="dish-card" id="sushi">
+            <h3>Sushi</h3>
+            <p>Sushi is a traditional Japanese dish made with vinegared rice, usually accompanied by a variety of
+                ingredients such as raw fish, vegetables, and sometimes tropical fruits. The primary types of sushi
+                include nigiri (hand-pressed sushi), maki (roll sushi), sashimi (slices of raw fish without rice), and
+                temaki (hand-rolled sushi).
+            </p>
+            <button class="btn btn-order"><a href="#"><strong>Order Now</strong></a></button>
+        </div>
+        <div class="dish-card" id="ramen">
+            <h3>Ramen</h3>
+            <p>Ramen is a popular noodle soup dish in Japan. It consists of Chinese-style wheat noodles served in a
+                meat or (occasionally) fish-based broth, often flavored with soy sauce or miso. Toppings commonly
+                include sliced pork (chashu), nori (dried seaweed), menma (bamboo shoots), and green onions.
+                There are many regional variations of ramen in Japan, each with its unique ingredients and flavors.
+            </p>
+            <button class="btn btn-order"><a href="#"><strong>Order Now</strong></a></button>
+        </div>
+        <div class="dish-card" id="tempura">
+            <h3>Tempura</h3>
+            <p>Tempura is a traditional Japanese dish where seafood, vegetables, or other ingredients are battered and
+                deep-fried. The batter is made from cold water and wheat flour, sometimes with egg, resulting in a light
+                and crispy texture. Common tempura ingredients include shrimp, squid, sweet potatoes, and bell peppers.
+                Tempura is often served with tentsuyu dipping sauce, which is a mix of dashi, soy sauce, and mirin,
+                along with grated daikon radish.
+            </p>
+            <button class="btn btn-order"><a href="#"><strong>Order Now</strong></a></button>
+        </div>
+    </section>
+
+    <section class="about">
+        <h1>More About This Cuisine</h1>
+        <p>
+            Japanese cuisine, also known as "Washoku," is renowned for its emphasis on seasonality, quality of
+            ingredients, and presentation. Rooted in centuries-old traditions, it offers a unique and diverse
+            culinary experience that reflects the rich culture and history of Japan.
+        </p>
+        <p>
+            From the delicate flavors of sushi and sashimi to the hearty comfort of ramen and tempura, Japanese
+            dishes are a perfect balance of taste and aesthetics. The use of fresh, natural ingredients and
+            meticulous preparation methods ensure that every meal is a feast for both the eyes and the palate.
+        </p>
+        <p>
+            Beyond its delicious food, Japanese cuisine also emphasizes the importance of dining etiquette and the
+            enjoyment of food as a communal activity. Whether you're savoring a simple bowl of miso soup or
+            indulging in a multi-course kaiseki meal, each dining experience is a celebration of Japan's culinary
+            artistry.
+        </p>
+    </section>
+</body>
+
+</html>body {
+    background: url('dish-8723519_1280.jpg') no-repeat center center/cover;
+    font-family: 'Lilita One', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: khaki;
+    padding: 1rem;
+    list-style: none;
+    margin: 0;
+    position: sticky;
+    top: 20px;
+}
+
+.nav-item {
+    margin: 0 1rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.nav-item a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.btn {
+    background-color: lavender;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+}
+
+.btn-login {
+    background-color: lightblue;
+}
+
+.btn-register {
+    background-color: lightgreen;
+}
+
+.btn a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.btn a:hover {
+    color: yellow;
+}
+
+.btn:hover {
+    background-color: black;
+
+    color: white;
+}
+
+.dishes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem 1rem;
+}
+
+.dish-card {
+    background-color: burlywood;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 300px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    box-shadow: 5px 5px 10px tomato;
+}
+
+.dish-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.dish-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-order {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: lavender;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+.about {
+    background-color: tomato;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
